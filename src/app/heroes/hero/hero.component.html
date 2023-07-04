@@ -1,0 +1,22 @@
+<p>hero</p>
+
+<dl>
+  <td>
+    Nombre
+  </td>
+  <dd>
+    {{name}}
+  </dd>
+  <td>Edad</td>
+  <dd>{{age}}</dd>
+</dl>
+
+
+<button *ngIf="age == 45" (click)="changeAge()">
+  Cambiar edad
+</button>
+
+<button *ngIf="name !=='Spiderman'" (click)="changeName()">
+  Cambiar nombre
+</button>
+<button (click)="resetForm()">Reset Form</button>
